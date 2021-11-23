@@ -31,6 +31,7 @@ content = """
 <h1>Swift</h1>
 </body>
 </html>
+"""
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
@@ -45,6 +46,11 @@ httpd.serve_forever()
 ```
 ## OUTPUT:
 
+## CLIENT SIDE OUTPUT:
+![OUTPUT 1](./images/OUTPUT1.png)
+
+## SERVER SIDE OUTPUT:
+![OUTPUT 2](./images/OUTPUT2.png)
 
 ## RESULT:
 ### To develop a simple webserver to display the top five programming languages is executed successfully.
