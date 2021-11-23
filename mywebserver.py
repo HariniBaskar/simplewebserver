@@ -1,5 +1,3 @@
-```
-
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
 <!DOCTYPE html>
@@ -15,6 +13,7 @@ content = """
 <h1>Swift</h1>
 </body>
 </html>
+"""
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
@@ -26,5 +25,3 @@ server_address = ('',8080)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
-
-```
